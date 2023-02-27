@@ -6,7 +6,7 @@
   <!-- Ícone da aba -->
   <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/dakirby309/simply-styled/128/Calendar-icon.png"
     type="image/x-icon">
-  <title>Calendário dinâmico - Inglês</title>
+  <title>Calendário dinâmico</title>
 
   <link rel="stylesheet" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,8 @@
   <!-- Link dos ícones do Google -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="script.js" defer></script>
+  <!-- O "defer" é importante para garantir que o html/css seja carregado primeiro. -->
 </head>
 
 <body>
@@ -21,7 +23,7 @@
   <div class="wrapper">
 
     <header>
-      <p class="current-date">September 2023</p>
+      <p class="current-date"></p>
       <div class="icons">
         <!-- Aplicação das setas de navegação. -->
         <span class="material-symbols-rounded">arrow_back</span>
@@ -31,13 +33,13 @@
 
     <div class="calendar">
       <ul class="weekdays">
-        <li>Sun</li>
-        <li>Mon</li>
-        <li>Tues</li>
-        <li>Wed</li>
-        <li>Thu</li>
-        <li>Fri</li>
-        <li>Sat</li>
+        <li>Dom</li>
+        <li>Seg</li>
+        <li>Ter</li>
+        <li>Quar</li>
+        <li>Quin</li>
+        <li>Sex</li>
+        <li>Sáb</li>
       </ul>
       <ul class="days">
         <li class="inactive">28</li>
@@ -74,7 +76,7 @@
         <li>28</li>
         <li>29</li>
         <li>30</li>
-        <li class="inactive" >1</li>
+        <li class="inactive">1</li>
 
 
       </ul>
