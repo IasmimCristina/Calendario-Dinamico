@@ -1,8 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-*{
+/* Variáveis */
+:root {
+  /* Cores */
+  --primary: #b33939;
+  --textColor: #191102;
+  --textFade: #86a87d;
+  --tertiary: #bbd8b3;
+ 
+  --fade: #cfffc3;
+}
+
+/* Estilos gerais */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--primary);
+}
+
+li,
+p,
+span {
+  color: var(--textColor);
+}
+
+/* Estilização do calendário */
+
+.wrapper {
+  width: 450px;
+  background: var(--tertiary);
+  border-radius: 1.2rem;
+}
+
+/* Cabeçalho */
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.875rem 0px 0.625rem;
+}
+
+header .current-date {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header .icons span {
+  height: 2.675rem;
+  width: 2.675rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 2.375rem;
+  border-radius: 50%;
+}
+
+header .icons span:hover {
+  transition: 0.5s;
+  background-color: var(--fade);
+  }
+
+header .icons span:last-child {
+  margin-left: 0.625rem;
+}
+
+/* Datas */
+
+.calendar {
+  padding: 1.5rem;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar .days {
+  margin-bottom: 1.5rem;
+}
+
+.calendar .weekdays li {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.calendar ul li {
+  position: relative; /*O before é relativo às listas.*/
+  width: calc(100% / 7); /*Para cada dia da semana, relativa ao calendário.*/
+}
+
+.calendar .days li {
+  cursor: pointer;
+  margin-top: 2rem;
+  z-index: 1; /*Valores index estão próximos no código, esse possui prioridade, vem primeiro.*/
+}
+.days li.inactive {
+  color:  var(--textFade);
+}
+.days li.active {
+  color:  white;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*O before ficou centrlaizado com essa confirguração.*/
+}
+
+.days li:hover::before {
+  background: var(--fade);
+  transition: 0.3s;
+}
+
+.days li.active::before {
+background-color: #b33939;
 }
