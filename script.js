@@ -15,7 +15,6 @@ let date = new Date(),
 const monthsBrazil = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
 
-//FAÇA A CORREÇÃO!!!
 
 
 const showCalendar = () => {
@@ -60,6 +59,16 @@ function prevNextChange() {
 
     icon.addEventListener("click", () => {
       currentMonth = icon.id === "prev" ? currentMonth - 1 : currentMonth + 1;
+
+
+      if (currentMonth < 0 || currentMonth > 11) {
+        //As datas no calendário ainda funcionam, mas ainda se precisa atualizar os nomes na tela:
+        date = new Date(currentYear, currentMonth);
+        currentYear = date.getFullYear(); //Atualizando o ano.
+        currentMonth = date.getMonth(); //Atualizando o mês.
+
+      } else   date = new Date(); //Uma data nova será passada normalmente caso contrário.
+      
       showCalendar();
     })
   })

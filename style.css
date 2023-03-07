@@ -141,13 +141,11 @@ header .icons span:last-child {
 
 .days li.active::before {
   background-color: #b33939;
-  border: solid .2px var(--fade);
-
+  border: solid 0.2px var(--fade);
 }
 
 .days li.active:hover::before {
   transition: 0.2s;
   background-color: var(--fade);
-  border: solid .2px var(--textColor);
-
+  border: solid 0.2px var(--textColor);
 }
