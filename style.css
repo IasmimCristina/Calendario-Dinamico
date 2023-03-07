@@ -42,6 +42,7 @@ span {
   width: 450px;
   background: var(--tertiary);
   border-radius: 1.2rem;
+  border: 3.5px solid var(--textFade);
 }
 
 /* Cabeçalho */
@@ -112,8 +113,12 @@ header .icons span:last-child {
   color: var(--textFade);
 }
 .days li.active {
-  color: white;
+  color: var(--fade);
 }
+.days li.active:hover {
+  color: var(--primary);
+}
+
 .calendar .days li::before {
   position: absolute;
   content: "";
@@ -136,4 +141,13 @@ header .icons span:last-child {
 
 .days li.active::before {
   background-color: #b33939;
+  border: solid .2px var(--fade);
+
+}
+
+.days li.active:hover::before {
+  transition: 0.2s;
+  background-color: var(--fade);
+  border: solid .2px var(--textColor);
+
 }
