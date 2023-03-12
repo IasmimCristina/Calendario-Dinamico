@@ -8,6 +8,7 @@
 # 📅 Calendário Dinâmico 📅
 
 Um simples calendário dinâmico desenvolvido com HTML/CSS. Nele há um relógio dinâmico e modos escuro e claro.
+  Link do deploy: https://app.netlify.com/sites/cool-duckanoo-7f406b/overview
   
 </div>
 
