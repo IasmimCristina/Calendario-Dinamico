@@ -10,8 +10,6 @@
   --tertiary: #bbd8b3;
   --fade: #cfffc3;
   --brightness: #ffffff;
-
- 
 }
 
 /* Estilos gerais */
@@ -20,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  //Retirar a seleção de texto:
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -85,8 +84,8 @@ span {
 }
 
 header .current-date {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
 }
 header .icons span {
   height: 2.675rem;
@@ -98,6 +97,16 @@ header .icons span {
   line-height: 2.375rem;
   border-radius: 50%;
 }
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 10,
+  'opsz' 48
+}
+
 
 header .icons span:hover {
   transition: 0.5s;
@@ -183,7 +192,7 @@ header .icons span:last-child {
 /*Footer*/
 
 footer {
-  background-color: var(--tertiary);  
+  background-color: var(--tertiary);
   /* Essa configuração funciona se a altura do seu footer não for dinâmica: */
   position: absolute;
   bottom: 0;
@@ -215,7 +224,7 @@ footer .footer-wrapper .footer-text a {
   color: var(--fade);
   font-weight: 700;
   font-size: 0.8rem;
-  text-shadow: #0000008a 2px 2px 2px;  
+  text-shadow: #0000008a 2px 2px 2px;
 }
 footer .footer-wrapper .footer-text a:hover {
   transition: 0.5s;
@@ -237,7 +246,6 @@ footer .footer-wrapper .footer-text a:hover {
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
 }
 
-
 .clock div {
   height: 130px;
   width: 110px;
@@ -247,7 +255,7 @@ footer .footer-wrapper .footer-text a:hover {
   justify-content: center;
   text-shadow: var(--brightness) 1px 1px 2px;
   background-color: var(--tertiary);
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);  
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
   border-radius: 15%;
   letter-spacing: 3px;
 }
@@ -259,6 +267,4 @@ footer .footer-wrapper .footer-text a:hover {
 
 .clock span.time {
   font-size: 10px;
-
 }
-

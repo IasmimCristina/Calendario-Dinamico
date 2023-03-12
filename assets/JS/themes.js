@@ -1,3 +1,4 @@
+//Estilos dos dois modos:
 export const lightTheme = {
   '--primary': '#b33939',
   '--textColor': '#191102',
@@ -7,11 +8,12 @@ export const lightTheme = {
   '--brightness': '#ffffff',
 
 }
-export const darkTheme = { 
+// ----------------
+export const darkTheme = {
   '--primary': '#531212',
   '--textColor': '#D8C1C1',
   '--textFade': '#87a87d',
-  '--tertiary': '#375730', 
+  '--tertiary': '#375730',
   '--fade': '#709665',
   '--brightness': '#722c2c',
 }

@@ -2,11 +2,8 @@
 import {monthsBrazil} from './months.js';
 import {currentDate, daysTag, prevNextButton } from './documentTags.js';
 import {toggleLightSwitch, initialThemeSwitcher} from './toggleLightDark.js';
-import { lightTheme, darkTheme } from './themes.js';
 import {clockDynamism} from './clockDynamic.js';
-// const currentDate = document.querySelector(".current-date"),
-//   daysTag = document.querySelector(".days"),
-//   prevNextButton = document.querySelectorAll(".icons span");
+
 
 
 
@@ -14,13 +11,6 @@ import {clockDynamism} from './clockDynamic.js';
 let date = new Date(),
   currentYear = date.getFullYear(),
   currentMonth = date.getMonth();
-
-
-// //Meses:
-// const monthsBrazil = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
-
-
-
 
 const showCalendar = () => {
 
