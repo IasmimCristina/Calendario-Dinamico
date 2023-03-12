@@ -8,17 +8,43 @@
     type="image/x-icon">
   <title>Calendário dinâmico</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Link dos ícones do Google -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script type="module" src="assets/JS/script.js" defer></script>
   <!-- O "defer" é importante para garantir que o html/css seja carregado primeiro. -->
 </head>
 
 <body>
+
+  <button class="material-symbols-outlined light-switcher">
+    light_mode
+  </button>
+  <!-- <span class="material-symbols-outlined">
+    mode_night
+    </span> -->
+
+  <div class="clock">
+    <div>
+      <span id="hours">00</span>
+      <span class="time">Hora(s)</span>
+    </div>
+    <div>
+      <span id="minutes">00</span>
+      <span class="time">Minuto(s)</span>
+    </div>
+    <div>
+      <span id="seconds">00</span>
+      <span class="time">Segundo(s)</span>
+    </div>
+
+  </div>
+
 
   <div class="wrapper">
 
@@ -46,6 +72,23 @@
       </ul>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-wrapper">
+
+      <!-- <hr> -->
+
+      <span class="video-footer footer-text">👾Vídeo👾 usado como referência: <a
+          href="https://youtu.be/Z1BGAivZRlE">Create A Dynamic Calendar in HTML CSS & JavaScript</a></span>
+      <!-- <hr> -->
+      <span class="link-footer footer-text">🔗Link🔗 do repositório: <a
+          href="https://github.com/IasmimCristina/Calendario-Dinamico">Projeto Calendário Dinâmico</a></span>
+
+      <span class="creator-footer footer-text">Feito com 💖 por: <a href="https://github.com/IasmimCristina">
+          Iasmim Cristina
+        </a></span>
+    </div>
+  </footer>
 
 </body>
 
