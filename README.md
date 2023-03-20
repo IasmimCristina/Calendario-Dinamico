@@ -24,6 +24,7 @@ Um simples calendário dinâmico desenvolvido com HTML/CSS. Nele há um relógio
 - Calendário dinâmico com anos passados e futuros.
 - Destaque do dia atual no calendário para melhor visualização.
 - A preferência do modo escuro ou claro é salva no Local Storage.
+- Atenção: *não responsivo!*
 
 
 ![Captura de tela de 2023-03-12 15-11-31](https://user-images.githubusercontent.com/100351576/224564033-f417729e-0429-4665-95ba-f19aaf2f57fd.png)
